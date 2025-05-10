@@ -57,16 +57,16 @@ module top_module(
         end
     end
     
-    PE_4input #(1,0,0,0,4,10) PE1 (input_rst,input_PE1,input_PE2,input_PE3,input_PE4, output_PE1);
-    PE_4input #(0,1,0,0,4,10) PE2 (input_rst,input_PE1,input_PE2,input_PE3,input_PE4, output_PE2);
-    PE_4input #(0,0,1,1,4,10) PE3 (input_rst,input_PE1,input_PE2,input_PE3,input_PE4, output_PE3);
+    PE_4input #(1,0,0,0,4,21) PE1 (input_rst,input_PE1,input_PE2,input_PE3,input_PE4, output_PE1);
+    PE_4input #(0,1,0,0,4,21) PE2 (input_rst,input_PE1,input_PE2,input_PE3,input_PE4, output_PE2);
+    PE_4input #(0,0,1,1,4,21) PE3 (input_rst,input_PE1,input_PE2,input_PE3,input_PE4, output_PE3);
     
-    PE_3input #(1,0,0,10,16) PE4 (input_rst,output_PE1, output_PE2, output_PE3, output_PE4);
-    PE_3input #(0,1,0,10,16) PE5 (input_rst,output_PE1, output_PE2, output_PE3, output_PE5);
-    PE_3input #(0,0,1,10,16) PE6 (input_rst,output_PE1, output_PE2, output_PE3, output_PE6);
+    PE_3input #(1,0,0,21,21) PE4 (input_rst,output_PE1, output_PE2, output_PE3, output_PE4);
+    PE_3input #(0,1,0,21,21) PE5 (input_rst,output_PE1, output_PE2, output_PE3, output_PE5);
+    PE_3input #(0,0,1,21,21) PE6 (input_rst,output_PE1, output_PE2, output_PE3, output_PE6);
     
-    PE_3input #(1,0,0,16,21) PE7 (input_rst,output_PE4, output_PE5, output_PE6, output_PE7);
-    PE_3input #(0,1,0,16,21) PE8 (input_rst,output_PE4, output_PE5, output_PE6, output_PE8);
-    PE_3input #(0,0,1,16,21) PE9 (input_rst,output_PE4, output_PE5, output_PE6, output_PE9);
+    PE_3input #(1,0,0,21,21) PE7 (input_rst,output_PE4, output_PE5, output_PE6, output_PE7);
+    PE_3input #(0,1,0,21,21) PE8 (input_rst,output_PE4, output_PE5, output_PE6, output_PE8);
+    PE_3input #(0,0,1,21,21) PE9 (input_rst,output_PE4, output_PE5, output_PE6, output_PE9);
     
 endmodule
